@@ -3,7 +3,6 @@ package edu.kis.vh.nursery.list;
 public class IntLinkedList {
 
     Node last;
-    int i;
 
     public void push(int i) {
         if (last == null)
@@ -35,6 +34,18 @@ public class IntLinkedList {
         int ret = last.value;
         last = last.prev;
         return ret;
+    }
+
+}
+
+
+class Node {
+
+    public int value;
+    public Node prev, next;
+
+    public Node(int i) {
+        value = i;
     }
 
 }
